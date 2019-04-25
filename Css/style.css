@@ -1,0 +1,314 @@
+*,*:after,*:before {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: "Crete Round", sans-serif;
+}
+.container{
+width:1100px;
+margin:auto;     
+}
+.clearfix{
+clear: both;    
+}
+/*First section*/
+.header{
+ height: 705px;
+ background-image: url(..//images/bike.jpg);
+ background-size: cover;
+ position: relative;
+}
+
+.header .header_head{
+padding-top:25px;     
+}
+.header .header_head img{
+float: left;    
+cursor: pointer;    
+}
+.header .header_head nav{
+float: right;    
+}
+.header .header_head nav ul li {
+display: inline-block;
+padding-top: 6px;    
+padding-left: 70px;    
+}
+.header .header_head nav ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;    
+}
+.header .header_content{
+width: 700px;
+margin: auto;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.header .header_content h1{
+font-size: 39px;
+font-weight:bold;
+color: #fff;    
+margin-bottom:2%;    
+}
+.header .header_content P{
+font-size: 21px;    
+color:#fff;    
+margin-bottom: 2%;    
+}
+.header .header_content button{
+width: 150px;
+border: 0;
+outline:none;
+padding: 17px;
+font-size: 16px;    
+margin-left: 5%;
+border-radius:25px;
+cursor: pointer;
+}
+.header .header_content button:first-child{
+background: #ff6600;    
+color:#fff;    
+}
+.header .header_content button:last-child{
+background:#FF6600;
+color: #fff;    
+}
+
+.header .header_content button:hover{
+background:#FF6600;
+}
+
+.header .header_footer{
+width: 28px;
+height: 52px;
+position: absolute;
+bottom:50px;
+left:50%;
+border: 2px solid #fff;
+border-radius:12px;     
+}
+.header .header_footer .scroll{
+width: 5px;
+height: 10px;
+margin: auto;
+background: #fff;
+position: relative;
+top:4px;
+animation: scrolling .8s ease-in-out infinite;  
+border-radius:15px;     
+}
+@keyframes scrolling{
+    0%{
+        opacity: 0;
+        top: 5px;
+    }    
+    30%{
+        opacity: 1;
+        top: 10px;
+    }
+    100%{
+        opacity: 0;
+        top: 25px;
+    }
+}
+/*Second section*/
+.BeFirst{
+    height: 680px;
+    padding-top:20px; 
+    padding-bottom: 20%;
+    background-image: url(..//images/black.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+.BeFirst .BeFirst_center h1{    
+border-top: 3px solid #FFF;
+font-size: 60px;
+font-weight: bolder;
+/*margin-bottom: 83px;*/
+}
+.BeFirst .BeFirst_center p{
+font-size:26px;    
+border-bottom: 1px solid #CCC; 
+color: #fff;
+padding-bottom: 10px;    
+}
+/*thired section*/
+.features {
+padding-bottom: 30%;    
+background:#000;    
+}
+
+.features .features_feat{
+width: 30%;
+float: left;
+margin-right: 2%;    
+}
+.features .features_feat:nth-child(1) hr{
+height: 5px;    
+background:#FF6600;
+border: 0;    
+}
+.features .features_feat:nth-child(2) hr{
+height: 5px;    
+background:#FF6600;
+border: 0;    
+}
+.features .features_feat:nth-child(3) hr{
+height: 5px;    
+background:#FF6600;
+border: 0;    
+}
+.features .features_feat h1{
+font-size: 30px;
+margin-top: 10%; 
+margin-bottom: 10%;    
+color:#ccc;    
+    
+}
+.features .features_feat p{
+color: #999;
+line-height: 1.5;}
+
+/*Fourth section*/
+.pricing{
+padding-bottom:10%;
+background:#fff;
+height:auto;
+text-align: center;    
+padding-top: 3px;    
+}
+.pricing h1{
+color: #000;
+font-size: 51px;   
+margin-bottom: 2%;    
+}
+.pricing p{
+font-size: 30px;
+color:#000;    
+margin-bottom: 3%;    
+}
+.pricing .pricing_flex{
+display: flex;
+width: 100%;
+justify-content: center;    
+}
+.pricing .pricing_flex .flex_item{
+width: 32%;    
+background: #FF6600;  
+border-radius:25px;    
+}
+.pricing .pricing_flex .flex_item ul{
+list-style: none;
+background: #fff;
+transition: all .5s ease-in-out;    
+}
+.pricing .pricing_flex .flex_item ul:hover{
+margin-top: -20px;    
+}
+.pricing .pricing_flex .flex_item ul:hover li.dollar{
+background: #222;    
+}
+.pricing .pricing_flex .flex_item ul:hover li.btn{
+background: #222;    
+}
+
+.pricing .pricing_flex .flex_item ul li.price{
+background: #000;
+color:#fff;    
+padding:20px;
+}
+.pricing .pricing_flex .flex_item ul li.dollar{
+background: #000;
+color:#ccc;
+font-size: 21px;
+font-weight: 100px;
+padding:13px; 
+}
+.pricing .pricing_flex .flex_item ul li.content{
+font-size: 19px;
+line-height: 1.2;
+color: #999;    
+padding: 10px;    
+border-bottom: 1px solid #999;    
+}
+.pricing .pricing_flex .flex_item ul li.btn{
+padding: 15px;  
+color:#FF6600;
+background:#000;    
+text-transform: uppercase;  
+font-family:fantasy;
+font-size: 26px;    
+cursor: pointer;
+}
+/*fifth section*/
+.invite{
+height: auto;
+padding-bottom: 10%;  
+text-align: center;
+}
+.invite i{
+color:#000;     
+width:60px;
+}
+.invite h1{
+font-size:40px;
+margin-bottom:2%;    
+}
+.invite p{
+margin-bottom: 2%;    
+}
+.invite input{
+display: block;
+width: 201px;
+margin: auto;
+height:47px;
+padding: 10px;
+outline: 0;
+margin-bottom: 2%;    
+}
+.invite input::-webkit-input-placeholder{
+color: #999;    
+}
+.invite button{
+width: 222px;
+height: 55px;
+background:#FF6600;
+padding: 19px;    
+border: 0;
+outline: 0;
+cursor: pointer;
+text-transform: uppercase;  
+color: #fff;    
+font-family:"Crete Round";
+}
+/*sixth section*/
+footer{
+padding-bottom: 8%;
+background: #000; 
+padding-top: 2%;    
+}
+footer div.left{
+float: left;
+}
+footer div.left span{
+padding-right: 10px; 
+color: #666;    
+}
+footer div.right{
+float: right;
+}
+footer div.right span{
+color: #666;    
+}
+footer i{
+color: #666;   
+}
+/*Finish*/
